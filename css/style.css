@@ -53,7 +53,7 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1120px;
+  max-width: 90%;
   margin-inline: 1.5rem;
   max-height: 100px;
 }
