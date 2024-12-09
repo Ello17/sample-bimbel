@@ -278,6 +278,9 @@ a {
   .nav__link i{
     display: none;
   }
+  .container-information > .information .list{
+    margin-left: 40px;
+  }
 }
 /* End Navbar */
 
@@ -285,6 +288,7 @@ a {
 section{
   height: 100vh;
   width: 100%;
+  /* position: absolute; */
 }
 /* Hero */
 .hero{
@@ -292,17 +296,19 @@ section{
   /* background-image: url('/assets/template/Bg-img.png');
   background-size: cover;
   background-position: center; */
-
-  background-color: #2A3335 !important;
-  min-height: 75vh;
-  height: fit-content;
+  height: 100vh;
+  width: 100%;
+}
+.background{
   color: black;
   display: flex;
   flex-direction: column;
   align-items:end;
   /* align-items: center; */
   justify-content: center;
-  width: 100%;
+  z-index: 1;
+  background-color: #2A3335;
+  height: 620px;
 }
 .container-content-hero{
   display: flex;
@@ -336,14 +342,39 @@ section{
   margin-bottom: -10%;
 }
 .container-information > .information{
-  height: 200px;
+  height: 150px;
   background-color: #fff;
   width: 80%;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.context-text h1{
+.container-information > .information > .list{
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 100%;
+}
+.container-information > .information > .list > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container-information > .information > .list > div > i{
+font-size: 30px;
+/* background-color: var(--black-color); */
+background-color: #E49422;
+color: white;
+margin-right: 10px;
+border-radius: 100%;
+padding: 10px;
+}
+h1{
   font-size:2.5em;
 }
 .context-text h3{
@@ -361,7 +392,7 @@ section{
     place-items: center;
     grid-template-columns: repeat(1, 1fr);
   }
-  .context-text h1{
+  h1{
     font-size:1.5em;
   } 
   .hero{
@@ -372,4 +403,32 @@ section{
 .context-text h3{
   font-size: 1em;
 }
+.container-information > .information{
+  height: fit-content;
+}
+.container-information > .information > .list{
+  /* align-items: center; */
+  /* display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px; */
+  display: flex;
+  padding: 10px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.background{
+  height: 100%;
+}
+}
+
+/* information */
+/* .information{
+  } */
+  /* layanan */
+  .container-layanan{
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
