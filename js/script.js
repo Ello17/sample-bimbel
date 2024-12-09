@@ -31,4 +31,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.info-h1', { origin: 'top' });
+ScrollReveal().reveal('.pop-up', { scale: 0.85 });
+ScrollReveal().reveal('.spotlight', {
+   distance: '20px',
+   opacity: 0.5
+});
 // ScrollReveal().reveal('.contact form, .home-img, .motivation-container', { origin: 'bottom' });
