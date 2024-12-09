@@ -293,7 +293,7 @@ section{
   background-size: cover;
   background-position: center; */
 
-  background-color: #2A3335;
+  background-color: #2A3335 !important;
   min-height: 75vh;
   height: fit-content;
   color: black;
