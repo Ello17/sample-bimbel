@@ -281,6 +281,10 @@ a {
   .container-information > .information .list{
     margin-left: 40px;
   }
+  .container-layanan > .information {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 }
 /* End Navbar */
 
@@ -288,7 +292,7 @@ a {
 section{
   height: 100vh;
   width: 100%;
-  /* position: absolute; */
+  /* position: fixed; */
 }
 /* Hero */
 .hero{
@@ -376,6 +380,15 @@ h1{
 .context-text h3{
   font-size: 1.8em;
 }
+@media screen and (max-width: 468px){
+  .container-layanan > .information{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+}
 @media screen and (min-width: 768px) {
   .background{
     flex-direction: column;
@@ -383,6 +396,9 @@ h1{
     /* align-items: center; */
     justify-content: center;
   }
+  /* .container-layanan > .information{
+    grid-template-columns: repeat(2, 1fr);
+  } */
 }
 @media screen and (max-width: 768px) {
   .context-text{
@@ -430,14 +446,54 @@ h1{
   /* justify-content: center; */
   padding-top: 20%;
 }
+.container-layanan > .information{
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
 }
 
 /* information */
 /* .information{
   } */
   /* layanan */
-  .container-layanan{
-  width: 100%;
+.container-layanan{
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-layanan > .information{
+  display: grid;
+  place-items: center;
+  padding-top: 1%;
+  width: 80%;
+  gap: 20px;
+}
+.info-h1{
+  border-bottom: 3px solid #E49422;
+}
+.info{
+  display: flex;
+  justify-content: center;
+}
+.card img{
   height: 100%;
-  background-color: red;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.card{
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 5%;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: white;
+}
+.card-information{
+  text-align: center;
+  padding-top: 2%;
+  margin: 0px 20px 0px 20px;
+}
+.card-information > p{
+  padding-top: 15px;
 }
