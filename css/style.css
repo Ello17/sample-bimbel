@@ -288,9 +288,12 @@ section{
 }
 /* Hero */
 .hero{
-  background-image: url('/assets/template/Bg-img.png');
+  /* menggunakan image */
+  /* background-image: url('/assets/template/Bg-img.png');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+
+  background-color: #2A3335;
   min-height: 75vh;
   height: fit-content;
   color: black;
