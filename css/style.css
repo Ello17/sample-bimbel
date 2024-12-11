@@ -284,6 +284,9 @@ a {
   .container-layanan > .information {
     grid-template-columns: repeat(3, 1fr);
   }
+  .hero{
+    margin-bottom: 10%;
+  }
 }
 /* End Navbar */
 
