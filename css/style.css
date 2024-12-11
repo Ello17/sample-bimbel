@@ -285,7 +285,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
   .hero{
-    margin-bottom: 10%;
+   min-height: 100vh;
   }
 }
 /* End Navbar */
@@ -541,4 +541,8 @@ h1{
 }
 .card-information > p{
   padding-top: 15px;
+}
+.f-s{
+  width: 100%;  
+  height: 100vh;
 }
