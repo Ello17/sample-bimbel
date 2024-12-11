@@ -402,6 +402,13 @@ h1{
   .context-text{
     max-width: 80%;
   }
+    .container-layanan{
+      /* margin-top: 30%; */
+      margin-top: 20px;
+    }
+    .hero {
+      height: fit-content ;
+    }
 }
 @media screen and (max-width: 1150px) {
   .container-layanan > .information{
@@ -478,6 +485,9 @@ h1{
 .container-layanan > .information{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+}
+.container-layanan{
+  margin-top: 10px;
 }
 }
 
