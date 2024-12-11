@@ -600,4 +600,8 @@ p{
   font-family:sans-serif, serif;
   color: white;
   border-radius: 5px;
+  transition: .2s;
+}
+.btn > a:hover {
+background-color: #905c14;
 }
