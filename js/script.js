@@ -31,6 +31,8 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.info-h1', { origin: 'top' });
+ScrollReveal().reveal('.left', { origin: 'left' });
+ScrollReveal().reveal('.right', { origin: 'right' });
 ScrollReveal().reveal('.pop-up', { scale: 0.85 });
 ScrollReveal().reveal('.spotlight', {
    distance: '20px',

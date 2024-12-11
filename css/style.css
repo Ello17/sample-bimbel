@@ -397,6 +397,12 @@ h1{
   .flex{
     grid-template-columns: repeat(1, 1fr);
   }
+  .description > .flex > .text > h3{
+    font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em;
+  }
 }
 @media screen and (min-width: 768px) {
   .background{
@@ -570,4 +576,8 @@ h1{
   width: 100%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.description > .flex > .text > h3{
+  font-size: 1.5em;
+  font-weight: 400;
 }
