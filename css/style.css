@@ -399,6 +399,9 @@ h1{
     /* align-items: center; */
     justify-content: center;
   }
+  .context-text{
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 1150px) {
   .container-layanan > .information{
