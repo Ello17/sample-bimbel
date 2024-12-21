@@ -757,3 +757,11 @@ line-height: 1.2;
 background-color: var(--color-bg-default);
 color: #fff;
 }
+footer{
+  background-color: #232323;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#E49422;
+}
