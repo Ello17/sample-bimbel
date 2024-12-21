@@ -292,6 +292,12 @@ a {
   .hero{
    min-height: 100vh;
   }
+  .container-footer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .one{
+    width: 390px;
+  }
 }
 /* End Navbar */
 
@@ -414,6 +420,10 @@ h1{
   font-style: normal;
   font-size: 1em;
   }
+  .container-footer{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }
 @media screen and (min-width: 768px) {
   .background{
@@ -435,6 +445,13 @@ h1{
     .flex{
       grid-template-columns: repeat(2, 1fr);
     }
+    /* .container-footer{
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 30px;
+    }
+    .one{
+      width: 100%;
+    } */
 }
 @media screen and (max-width: 1150px) {
   .container-layanan > .information{
@@ -461,6 +478,7 @@ h1{
   .container-information > .information{
     padding: 20px;
   }
+
 }
 @media screen and (max-width: 768px) {
   .context-text{
@@ -757,11 +775,86 @@ line-height: 1.2;
 background-color: var(--color-bg-default);
 color: #fff;
 }
+/* footer */
 footer{
   background-color: #232323;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+.container-footer{
+display: grid;
+border-bottom: 1px solid var(--color-paragraph);
+}
+.container-footer img{
+  height: 150px;
+  margin-bottom: 15px;
+}
+.container-footer > .box-footer{
+  color: white;
+}
+.box-footer{
+  padding: 10px;
+}
+.box-footer > h1{
+font-size:32px;
+margin-bottom: 15px;
+}
+.box-footer > h1 > span{
+  color: #E49422;
+}
+.box-footer > p{
+  color: white;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.box-footer > .btn-daftar{
+  color: white;
+  background-color: #E49422;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: .2s all;
+}
+.box-footer > .btn-daftar:hover{
+  opacity: 0.5;
+}
+.box-contact{
+  margin-top: 15px;
+  font-size: 16px;
+  display: grid;
+  gap: 15px;
+  align-items: center;
+  width: fit-content;
+}
+.box-contact > a{
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.box-contact > a > i{
+  font-size: 20px;
+  padding-right: 8px;
+}
+.box-contact > a > span:hover{
+opacity: 0.5;
+transition: .3s;
+}
+.box-footer > ul{
+  display: grid;
+  gap: 15px;
+}
+.box-footer > ul > li > a{
+  color:#b2b2b2;
+  font-weight: 400;
+  transition: .3s;
+}
+.box-footer > ul > li > a:hover{
   color:#E49422;
+}
+.divider{
+  border: 1px solid #E49422;
+  width: 40%;
 }
